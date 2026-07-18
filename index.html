@@ -3,12 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paula Karolak</title>
-</head>
-<body>
-  <h1>Paula Karolak</h1>
-  <p>Professional violist and live music for weddings, private events, and concerts.</p>
 
-  <a href="mailto:your-email@example.com">Contact Me</a>
+  <title>Paula Karolak | Violist</title>
+
+  <style>
+    /* Remove the browser's default spacing */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top navigation bar */
+    header {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      padding: 0 5%;
+    }
+
+    .logo {
+      width: 33%;
+      font-family: Georgia, serif;
+      font-size: 18px;
+    }
+
+    nav {
+      width: 34%;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .button-area {
+      width: 33%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .book-button {
+      display: inline-block;
+      padding: 10px 24px;
+      border: 2px solid black;
+      border-radius: 30px;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .book-button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Main two-column section */
+    .hero {
+      min-height: calc(100vh - 80px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-text {
+      display: flex;
+      align-items: center;
+      padding-left: 10%;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: clamp(55px, 6vw, 95px);
+      font-weight: normal;
+      line-height: 1;
+    }
+
+    .hero-image {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .hero-image img {
+      width: 82%;
+      height: calc(100vh - 80px);
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    /* Phone and tablet layout */
+    @media (max-width: 750px) {
+      header {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .logo {
+        width: 100%;
+      }
+
+      nav {
+        width: auto;
+        justify-content: flex-start;
+        flex: 1;
+      }
+
+      .button-area {
+        width: auto;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text {
+        min-height: 300px;
+        padding: 60px 30px;
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: 650px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      Paula Karolak | Violist
+    </div>
+
+    <nav>
+      <a href="#gallery">GALLERY</a>
+      <a href="#media">MEDIA</a>
+    </nav>
+
+    <div class="button-area">
+      <a class="book-button" href="booking.html">BOOK ME</a>
+    </div>
+  </header>
+
+  <main class="hero">
+    <section class="hero-text">
+      <h1>
+        Paula<br>
+        Karolak
+      </h1>
+    </section>
+
+    <section class="hero-image">
+      <img src="portrait.jpg" alt="Paula Karolak holding a viola">
+    </section>
+  </main>
+
 </body>
 </html>
